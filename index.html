@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>WASM CALC</title>
+
+</head>
+<body>
+    <h1 class="header">WASM CALCULATOR</h1>
+    <br>
+    <div class="calc">
+        <div class="sec">
+            <button id="numpad-1">1</button>
+            <button id="numpad-2">2</button>
+            <button id="numpad-3">3</button>
+            <button id="numpad-add">+</button>
+        </div>
+        <div class="sec">
+            <button id="numpad-4">4</button>
+            <button id="numpad-5">5</button>
+            <button id="numpad-6">6</button>
+            <button id="numpad-sub">-</button>
+        </div>
+        <div class="sec">
+            <button id="numpad-7">7</button>
+            <button id="numpad-8">8</button>
+            <button id="numpad-9">9</button>
+            <button id="numpad-mult">*</button>
+        </div>
+        <div class="sec">
+            <button id="numpad-reset">c</button>
+            <button id="numpad-0">0</button>
+            <button id="numpad-result">=</button>
+            <button id="numpad-divide">/</button>
+        </div>
+    </div>
+    <div class="brdr">
+        <span id="result">
+        </span>
+    </div>
+
+    
+    <script src="wasm_exec.js"></script>
+    <script src="myscript.js"></script>
+</body>
+</html>
