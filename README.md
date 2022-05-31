@@ -1,0 +1,1 @@
+Simple WASM CALCULATOR
