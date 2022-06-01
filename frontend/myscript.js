@@ -46,19 +46,19 @@ WebAssembly.instantiateStreaming(fetch("main.wasm"),goWasm.importObject).then((r
     })
     document.querySelector("#numpad-add").addEventListener("click",() => {
         getNumber(document.querySelector("#numpad-add").innerHTML)
-        document.querySelector("#result").innerHTML = ""
+        document.querySelector("#result").innerHTML += "+"
     })
     document.querySelector("#numpad-sub").addEventListener("click",() => {
         getNumber(document.querySelector("#numpad-sub").innerHTML)
-        document.querySelector("#result").innerHTML = ""
+        document.querySelector("#result").innerHTML += "-"
     })
     document.querySelector("#numpad-mult").addEventListener("click",() => {
         getNumber(document.querySelector("#numpad-mult").innerHTML)
-        document.querySelector("#result").innerHTML = ""
+        document.querySelector("#result").innerHTML += "*"
     })
     document.querySelector("#numpad-divide").addEventListener("click",() => {
         getNumber(document.querySelector("#numpad-divide").innerHTML)
-        document.querySelector("#result").innerHTML = ""
+        document.querySelector("#result").innerHTML += "/"
     })
     document.querySelector("#numpad-result").addEventListener("click", () => {
         document.querySelector("#result").innerHTML = Calculate()
